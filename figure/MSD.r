@@ -1,0 +1,8 @@
+library(ggplot2)
+library(ggthemes)
+MSD <- read.csv("figure/MSD.csv", header=TRUE, encoding="UTF-8")
+names(MSD) <- c("Time", "MSD")
+pdf("figure/MSD.pdf")
+p <- ggplot(MSD, aes(x=Time, y=MSD)) + geom_point(color="#2074A9", size=4)+ ylab("MSD(Å^2)") + xlab("Time(ps)")
+p + theme(plot.title = element_text(hjust = 0.5), text = element_text(size=16), legend.position = "bottom")+ scale_color_manual(values=c("#2074A9", "#149E53", "#C69523", "#BB4737", "#74777C"))
+dev.off()

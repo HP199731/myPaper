@@ -1,0 +1,56 @@
+\documentclass[supercite]{upcthesis}
+	\makeatother
+	\title{脂肪酸甲酯在微介孔H-ZSM-5分子筛内的吸附扩散模拟}
+	%\subtitle{这是副标题}
+	\entitle{\begin{center}Adsorption and diffusion simulation of fatty acid methyl ester in microporous and mesoporous H-ZSM-5 zeolite\end{center}}
+	%\ensubtitle{This is EnSubTitle}
+	\author{黄盼}
+	\date{2019年6月1日}
+	\supervisor{刘熠斌}
+	\stuid{1503010603}
+	\classnum{化学工程与工艺1509班}
+\begin{document}
+	%封面页
+	\maketitle
+	%摘要页
+	\input{Tex/Abstract.tex}
+	%目录
+	\tableofcontents
+	\fancypagestyle{mypagestyle}{
+		\fancyhead[C]{\kaishu \zihao{5} 中国石油大学（华东）本科毕业论文}
+		\fancyfoot[C]{}
+	}
+
+	\listoffigures
+	\thispagestyle{mypagestyle}
+	\listoftables
+	\thispagestyle{mypagestyle}
+	\setcounter{page}{0}
+
+	%引言
+	\input{Tex/Introduction.tex}
+	%文献综述
+	\input{Tex/Overview.tex}
+	%建模
+	\input{Tex/Building.tex}
+	%吸附
+	\input{Tex/Adsorption.tex}
+	%扩散
+	\input{Tex/Diffusion.tex}
+	%结论
+	\input{Tex/Conclusion.tex}
+	%致谢页
+	\input{Tex/Thank.tex}
+	%参考文献页
+	\bibliography{Bibs/bibliography.bib}
+
+%\begin{generalappendices}
+%%\begin{appendices}
+%	\section{Appendix 1}
+%	\subsection{Some Appendix}
+%	\lipsum[11]
+%	\section{Appendix 2}
+%	\subsection{Some Other Appendix}
+%%\end{appendices}[toc, page, title, titletoc, header]
+%\end{generalappendices}
+\end{document}
